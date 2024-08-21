@@ -13,7 +13,7 @@
 
   async function createDBFile() {
     safeName = safeName + ".psdb";
-    status = await invoke("create_db", {db_name: safeName, master_password: masterPass});
+    status = await invoke("create_db", {dbName: safeName, masterPassword: masterPass});
   }
 </script>
 
