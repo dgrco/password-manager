@@ -10,6 +10,8 @@ use argon2::{
     Argon2
 };
 
+pub mod utils;
+
 // Learn more about Tauri commands at https://tauri.app/v1/guides/features/command
 #[tauri::command]
 fn create_db(db_name: String, master_password: String) -> String {
